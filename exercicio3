@@ -1,0 +1,37 @@
+// 3. Peça ao usuário para digitar três valores inteiros e imprima a soma deles;
+
+//importar biblioteca para ler o que usuário digitar
+import java.util.Scanner;
+
+public class exercicio3;
+
+  public static void main(String[] args) {
+
+  //declarar váriaveis
+  int numero1, numero2, numero3, total;
+
+  //ativar biblioteca
+  Scanner sc = new Scanner (System.in);
+
+  //usuário precisa informar o primeiro numero
+  System.out.println ("Digite primeiro número inteiro");
+  //guardar valores
+  numero1 = sc.nextInt();
+
+  //usuário precisa informar o segundo numero
+  System.out.println ("Digite segundo número inteiro");
+  //guardar valores
+  numero2 = sc.nextInt();
+
+  //usuário precisa informar o terceiro
+  System.out.println ("Digite terceiro número inteiro");
+  //guardar valores
+  numero3 = sc.nextInt();
+
+  //fazer a soma
+  total = numero1+numero2+numero3;
+
+  //mostrar resultado
+  System.out.println ("O resultado da soma é "+total);
+  
+  }
