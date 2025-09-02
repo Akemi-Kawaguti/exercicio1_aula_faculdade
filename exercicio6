@@ -1,0 +1,29 @@
+//6. Peça ao usuário inserir um número inteiro e imprima o seu antecessor;
+
+//importar biblioteca
+import java.util.Scanner;
+
+public class exercicio6{
+
+  public static void main(String[] args){
+
+  //declarar váriaveis
+  int numero, ante;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner (System.in);
+
+  //pedir número para usuário
+  System.out.println("Digite um número");
+
+  //guardar na váriavel
+  numero= sc.nextInt();
+
+  //atribuir função para achar o antecessor
+  ante= numero-1;
+
+  //mostrar resultado
+  System.out.println("O antecessor é " +ante);
+
+  }
+}
