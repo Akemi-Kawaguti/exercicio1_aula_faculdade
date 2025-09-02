@@ -1,0 +1,37 @@
+//7. Peça ao usuário inserir seu ano de nascimento e imprima sua idade;
+
+//importar biblioteca
+import java.util.Scanner;
+//para que o código não fique datado preciso de uma biblioteca que acesse o ano atual
+import java.time.LocalDate;
+
+public class exercicio7{
+
+  public static void main(String[] args){
+
+  //declarar variaveis
+  int anoNasc, anoAtual, idade;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner(System.in);
+
+  //Pedir que o usuário informe ano de nascimento
+  System.out.println("Digite seu ano de nascimento");
+
+  //guardar na váriavel
+  anoNasc= sc.nextInt();
+
+  //descobrir o ano atual
+  anoAtual= LocalDate.now().getYear();
+
+  //atribuir função para descobrir idade
+  idade= anoAtual-anoNasc;
+
+  //mostrar idade
+  System.out.println("Sua idade é "+idade);
+
+// boa prática: fechar o Scanner
+sc.close();
+
+  }
+}
