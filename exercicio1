@@ -3,7 +3,7 @@
 // importar scanner
 import java.util.Scanner;
 
-public class exercicio1;
+public class exercicio1{
 
   public static void main(String [] args) {
 
@@ -22,4 +22,5 @@ public class exercicio1;
   //mostrar para usuário
   System.out.println ("Número digitado é "+numero);
 
+}
 }
