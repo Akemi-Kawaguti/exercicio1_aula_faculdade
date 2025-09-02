@@ -3,7 +3,7 @@
 //importar biblioteca para ler o que usuário digitar
 import java.util.Scanner;
 
-public class exercicio3;
+public class exercicio3{
 
   public static void main(String[] args) {
 
@@ -35,3 +35,4 @@ public class exercicio3;
   System.out.println ("O resultado da soma é "+total);
   
   }
+}
