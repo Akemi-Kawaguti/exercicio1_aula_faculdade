@@ -3,7 +3,7 @@
 //importar biblioteca
 import java.util.Scanner;
 
-public class exercicio2;
+public class exercicio2{
 
   public static void main(String [] args) {
 
@@ -23,3 +23,4 @@ public class exercicio2;
   System.out.println ("O número digitado é "+numero);
   
   }
+}
