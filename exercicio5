@@ -1,0 +1,30 @@
+// 5. Faça para converter a velocidade de km/h para m/s;
+
+//importar biblioteca
+import java.util.Scanner;
+
+public class exercicio5{
+
+  public static void main(String[] args) {
+
+  //declarar variaveis
+  double km,ms;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner (System.in);
+
+  //pedir para usuário informar valor
+  System.out.println("Informe valor da velocidade em km/h");
+
+  //guardar valor na váriavel
+  km= sc.nextDouble();
+
+  //atribuir função de conversão
+  ms=km/3.6;
+
+  //mostrar resultado
+  System.out.println(" O resultado da conversão é " +ms+ "m/s")
+  
+  }
+
+  }
