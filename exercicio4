@@ -1,0 +1,27 @@
+4. Peça ao usuário inserir a temperatura em °C e imprima a temperatura em °F:
+
+//importar biblioteca
+import java.util.Scanner;
+
+public class exercicio4;
+
+  public static void main(String [] args){
+
+  //declarar váriaveis
+  double celsius, fah;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner(System.in);
+
+  //usuário deve informar valor
+  System.out.prinln ("Informe a temperatura em ˚C");
+
+  //guardar na váriavel
+  celsius = sc.nextInt();
+
+  //atribuir a conversão para outra váriavel
+  fah= celsius*(9.0/5)+32;
+
+  //mostrar resultado da conversão
+  System.out.println ("O resultado é "+fah,"˚F");
+  }
