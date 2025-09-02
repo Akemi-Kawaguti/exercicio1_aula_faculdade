@@ -1,0 +1,25 @@
+// 2. Faça um programa que leia um número real e o imprima;
+
+//importar biblioteca
+import java.util.Scanner;
+
+public class exercicio2;
+
+  public static void main(String [] args) {
+
+  //declarar váriavel
+  double numero;
+
+  //ativar biblioteca
+  Scanner sc = new Scanner (System.in);
+
+  //pedir para usuário digitar número real
+  System.out.println ("Digite um número real");
+
+  //guardar na váriavel
+  numero = sc.nextDouble();
+
+  //mostrar para usuário
+  System.out.println ("O número digitado é "+numero);
+  
+  }
