@@ -1,0 +1,25 @@
+// 1. Faça um programa que leia um número inteiro e o imprima;
+
+// importar scanner
+import java.util.Scanner;
+
+public class exercicio1;
+
+  public static void main(String [] args) {
+
+  //declarar variavel
+  int numero;
+
+  //ativar leitura do que for digitado
+  Scanner sc=new Scanner (System.in);
+
+  //pedir para usuário digitar
+  System.out.println ("Digite um número inteiro");
+
+  //quargar esse número na váriavel
+  numero= sc.nexInt();
+
+  //mostrar para usuário
+  System.out.println ("Número digitado é "+numero);
+
+}
