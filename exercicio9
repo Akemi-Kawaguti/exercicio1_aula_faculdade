@@ -1,0 +1,49 @@
+//9. Construa um algoritmo, em Java, em que o usuário digita as coordenadas X e Y de dois
+pontos do plano cartesiano e o programa retorna a distância entre eles;
+
+//importar biblioteca, Math não precisa importar
+import java.util.Scanner;
+
+public class exercicio9{
+
+  public static void main(String[] args){
+
+  //declarar váriaveis
+  int x1,y1,x2,y2;
+  //como vou usar raiz quadrada e elevar minha váriaveis é necessário que volte double
+  double distancia;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner(System.in);
+
+  //usuário deve informar valor de x1
+  System.out.println("Informe valor de x1");
+  //guardar valor na váriavel
+  x1=sc.nextInt();
+
+  //usuário deve informar valor de x2
+  System.out.println("Informe valor de x2");
+  //guardar valor na váriavel
+  x2=sc.nextInt();
+
+  //usuário deve informar valor de y1
+  System.out.println("Informe valor de y1");
+  //guardar valor na váriavel
+  y1=sc.nextInt();
+
+  //usuário deve informar valor de y2
+  System.out.println("Informe valor de y2");
+  //guardar valor na váriavel
+  y2=sc.nextInt();
+
+  //atribuir função para achar distância
+  distancia= Math.sqrt(Math.pow(x2-x1,2)+ Math.pow(y2-y1,2));
+
+  //apresentar resultado para usuário
+  System.out.println("A distância é de "+distancia);
+
+  //fechar biblioteca por boa prática
+  sc.close();
+
+  }
+}
