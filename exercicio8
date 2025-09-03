@@ -1,0 +1,32 @@
+//8. Faça um programa que calcula a área de uma circunferência com precisão de 2 casas decimais;
+
+//importar biblioteca, lembrando que o Math não precisa importar
+import java.util.Scanner;
+
+public class exercicio8{
+
+  public static void main(String[] args){
+
+  //declarar as váriaveis
+  double raio, area;
+
+  //ativar a biblioteca
+  Scanner sc=new Scanner(System.in);
+
+  //pedir valor de raio
+  System.out.println("Digite valor do raio");
+
+  //guardar na váriavel
+  raio= sc.nextDouble();
+
+  //atribuir função a váriavel para descobrir àrea;
+  area= Math.PI*Math.pow(raio,2);
+
+  //mostrar para usuário resultado com 2 casa decimais 
+  System.out.printf("A área da circunferência é %.2f\n",area);
+
+  //fechar scanner por boa prática
+  sc.close();
+  }
+
+}
