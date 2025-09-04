@@ -1,0 +1,39 @@
+//10. O custo ao consumidor de um carro novo é a soma do custo de fabricação adicionando 
+os impostos e a porcentagem de ganho do distribuidor. Supondo que a porcentagem do 
+distribuidor seja 15%, os impostos sejam de 30%, escreva um programa que leia o custo 
+de fabricação de um carro e retorna o custo ao consumidor;
+
+//importar biblioteca
+import java.util.Scanner;
+
+public class Exercicio10{
+
+  public static void main(String[] args){
+
+  //declarar variáveis
+  double custoFabric,imposto,ganhoDistribuidor,custoConsumidor;
+
+  //ativar biblioteca
+  Scanner sc=new Scanner(System.in);
+
+  //pedir valor para usuário
+  System.out.println("Digite valor de custo de fabricação");
+
+  //guardar valor na variável
+  custoFabric= sc.nextDouble();
+
+  //atribuir cálculo para importo e ganho do distribuidor
+  ganhoDistribuidor=(custoFabric*15.0)/100;
+  imposto=(custoFabric*30.0)/100;
+
+  //atribuir cálculo para custo do consumidor
+  custoConsumidor=custoFabric+ganhoDistribuidor+imposto;
+
+  //Mostrar resultado
+  System.out.println("O custo do consumidor é de "+custoConsumidor);
+
+//fechar Scanner por boa prática
+sc.close();
+
+  }
+}
